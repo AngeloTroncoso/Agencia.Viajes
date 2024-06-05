@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia de Viajes ProTravel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(45deg, #333, #007BFF);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            background-color: #f4f4f4;
+            padding: 10px 0;
+            text-align: center;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #ddd;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 600px;
+            background-color: #fff;
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            clear: both;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Agencia de Viajes ProTravel</h1>
+    </header>
+    <nav>
+        <a href="#destinos">Destinos</a>
+        <a href="#paquetes">Paquetes Turísticos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    <section id="destinos">
+        <h2>Destinos Populares</h2>
+        <p>Explora nuestros destinos más solicitados para tu próximo viaje:</p>
+        <div class="gallery">
+            <a href="https://es.wikipedia.org/wiki/Par%C3%ADs" target="_blank"><img src="C:\Users\usuario\Documents\PPI Angelo\mari.jpg" alt="París, Francia"></a>
+            <a href="https://es.wikipedia.org/wiki/Kioto" target="_blank"><img src="C:\Users\usuario\Documents\PPI Angelo\mañana.jpg" alt="Kioto, Japón"></a>
+        </div>
+    </section>
+    <section id="paquetes">
+        <h2>Paquetes Turísticos</h2>
+        <p>Descubre nuestros paquetes turísticos y vive una experiencia inolvidable:</p>
+        <ul>
+            <li>Paquete "Aventura en la Selva Amazónica" - ¡Explora la flora y fauna de la Amazonía!</li>
+            <li>Paquete "Rutas del Vino en Italia" - Disfruta de los mejores vinos y gastronomía italiana.</li>
+            <li>Paquete "Relax en las Islas Maldivas" - Descubre playas paradisíacas y aguas cristalinas.</li>
+            <li>Paquete "Explorando los Fiordos Noruegos" - Un viaje único entre majestuosos paisajes naturales.</li>
+        </ul>
+    </section>
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>¡Contáctanos para comenzar a planificar tu próximo viaje!</p>
+        <form>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+    <footer>
+        <p>Derechos de autor © 2024 ProTravel. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
